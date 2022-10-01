@@ -1,8 +1,7 @@
 import math
 
 def split_check(total, number_of_people):
-    cost_per_person = math.ceil(total / number_of_people)
-    return cost_per_person
+    return math.ceil(total / number_of_people)
 
 
 total_due = float(input("What is the total? "))
