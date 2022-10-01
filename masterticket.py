@@ -19,7 +19,7 @@ while ticket_remaining >= 1:
     print("The total due is €{}".format(amount_due))
 
     # Prompt user
-    should_proceed = input("Do you want proceed? Y/N")
+    should_proceed = input("Do you want proceed? Y/N"  )
 
     # If they want proceed Y/N
     if should_proceed.lower() == "y":
