@@ -14,4 +14,4 @@ except ValueError as err:
     print("({})".format(err))
 else:
     
-    print("Each person owes ${}".format(amount_due))
+    print("Each person owes €{}".format(amount_due))
