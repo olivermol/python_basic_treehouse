@@ -1,6 +1,14 @@
+import math
+
 def split_check(total, number_of_people):
-    cost_per_person = total / number_of_people
+    cost_per_person = math.ceil(total / number_of_people)
     return cost_per_person
 
-amount_due = split_check(84.97, 4)
+
+total_due = float(input("What is the total? "))
+number_of_people = int(input("How many people? "))
+
+amount_due = split_check(total_due, number_of_people)
+
+
 print("Each person owes ${}".format(amount_due))
