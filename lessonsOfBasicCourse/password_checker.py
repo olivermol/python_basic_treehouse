@@ -9,4 +9,4 @@ while password != MASTER_PASSWORD:
         sys.exit("Too many invalid password attempts")
     password = input("Invalid password, try again: \n")
     attempt_count += 1
-print("Welcom to secret village")
+print("Welcome to secret village")
