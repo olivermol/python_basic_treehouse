@@ -1,7 +1,10 @@
+SERIVE_CHARGE = 2
 TICKET_PRICE = 10
 
 tickets_remaining = 100
 
+def calculate_price(number_of_tickets):
+    return (number_of_tickets * TICKET_PRICE) + SERIVE_CHARGE
 
 while tickets_remaining >= 1:
     print("There are {} tickets remaining.".format(tickets_remaining))
@@ -17,7 +20,7 @@ while tickets_remaining >= 1:
         # Include the error text in the output
         print("Oh no, we ran into an issue. {}. Please try again".format(err))
     else:
-        amount_due = num_tickets * TICKET_PRICE
+        amount_due = calculate_price(num_tickets)
         print("The total due is €{}".format(amount_due))
         should_proceed = input("Do you want to proceed?  Y/N  ")
         if should_proceed.lower() == "y":
